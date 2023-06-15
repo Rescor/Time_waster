@@ -19,7 +19,6 @@ function firstInit() {
 function init() {
   let savedPasswords = localStorage.getItem("passwords");
   passwords = JSON.parse("[" + savedPasswords + "]");
-  console.log("pwd", passwords)
   console.log("init complete")
 }
 function resetHandler() {
