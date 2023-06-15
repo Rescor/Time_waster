@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="timeWaster">
+    <p class="welcome">Добро пожаловать в пожиратель времени!</p>
+    <p class="desc">
+      Случалось ли у вас такое, что вы покупали новое устройство в коллекцию, а на нём стоит четырёхзначный пароль? А т.к. это устройство старое - у вас нет никакого способа его прошить. Если вы настолько в отчаянии, что готовы брутфорсить пароль вручную - этот инструмент создан для вас!<br><br>
+      Брутфорсить по порядку от 0000 слишком скучно, поэтому здесь вы получите пять случайных паролей от 0000 до 9999. После нажатия на кнопку Дальше они будут удалены из списка выдачи, и вы получите следующие пять случаных паролей.<br><br>
+      Вы можете безопасно закрыть окно и вернуться к этому процессу позже - список оставшихся паролей сохраняется в Local Storage. Однако не очищайте кэш браузера, иначе придётся начинать сначала.
+    </p>
+    <h1 id="currentPwd"></h1>
+    <button onclick="nextHandler()">Дальше</button>
+    <button onclick="resetHandler()">Сброс</button>
+    <br><br><br>
+    <i>Вы можете нажимать пробел для получения следующих кодов</i>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
